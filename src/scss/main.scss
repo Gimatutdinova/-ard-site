@@ -1,0 +1,298 @@
+.main {
+    flex: 1 1 auto;
+    margin-top: 65px;
+
+    // .main__accordeon
+
+    &__accordion {
+        display: flex;
+        margin-top: 240px;
+    }
+
+    &__slider2 {
+        margin-top: 100px;
+    }
+}
+
+// Стили "аккордеона"
+
+.accordion {
+    width: 100%;
+    margin-left: 98px;
+    border-bottom: 1px $white solid;
+
+    // .accordion__item
+
+    &__item {
+        border-top: 1px $white solid;
+
+        & > p {
+            @extend %font_text;
+        }
+    }
+    
+    // .accordion__header
+
+    &__header {
+        display: block;
+        margin: 30px 0 30px 0;
+        cursor: pointer;
+    }
+
+    // .accordion__body
+
+    &__body {
+        margin-bottom: 30px;
+        display: none;
+    }
+}
+
+@media screen and (max-width: ($md2 + px)) {
+    
+    .main {
+
+        // .main__accordion
+
+        &__accordion {
+            display: block;
+            margin-top: 140px;
+
+            & > h1 {
+                font-size: 40px;
+            }
+        }
+    }
+
+    .accordion {
+
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0;
+        border-bottom: 1px $white solid;
+    
+        // .accordion__item
+    
+        &__item {
+            border-top: 1px $white solid;
+    
+            &._active .accordeon__body {
+                display: block;
+            }
+        }
+    
+        // .accordion__header
+    
+        &__header {
+            margin: 30px 0 30px 0;
+            cursor: pointer;
+        }
+    
+        // .accordion__body
+    
+        &__body {
+            display: none;
+            margin-bottom: 30px;
+        }
+    }
+   
+}
+
+// Стили ленты новостей
+
+.slider2 {
+    margin: 30px 0 109px;
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: 1fr 1fr;
+    column-gap:  20px;
+    row-gap:  50px;
+    
+
+    // .slider2__new
+
+    &__new {
+    }
+
+    // .slider2__photo
+
+    &__photo {
+    }
+
+    // .slider2__title
+
+    &__title {
+        margin: 30px 0 10px 0;
+    }
+
+    // .slider2__body
+
+    &__body {
+        width: 400px;
+    }
+}
+
+
+@media screen and (max-width: 1290px) {
+    .slider2 {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .slider2 {
+
+        // .slider2__new
+
+        &__new {
+            margin-right: 20px;
+        }
+
+        // .slider2__photo
+
+        &__photo {
+            width: 200px;
+            height: 264px;
+            object-fit: none;
+        }
+
+        // .slider2__body
+
+        &__body {
+            width: 200px;
+        }
+    }
+}
+
+@media screen and (max-width: ($md2 + px)) {
+    .main__slider2 > h1{
+        font-size: 40px;
+    }
+}
+
+// Стили подписки
+
+.main {
+
+    // .main__form
+
+    &__form {
+        height: 460px;
+        color: $black;
+        background: $white;
+
+        // .main__form_title
+
+        &_title {
+            padding: 50px 0 30px;
+        }
+
+        // .main__form_text
+
+        &_text {
+            width: 400px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+        }
+    }
+
+
+    // .main__conteiner
+
+    &__conteiner {
+    }
+
+    // .main__input
+
+    &__input {
+        padding-top: 15px;
+        display: grid;
+        grid-template-columns: repeat(2, 400px);
+        grid-template-rows: 1fr 1fr 1fr;
+        column-gap:  20px;
+        row-gap:  20px;
+    }
+
+    // .main__item
+
+    &__item {
+        width: 400px;
+        height: 50px;
+        border: 1px #00000066 solid;
+        border-radius: 10px;
+        
+        padding-left: 20px;
+    }
+
+    // .main__btn
+
+    &__btn {
+        width: 141px;
+        height: 50px;
+        border: 1px #00000066 solid;
+        border-radius: 10px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        cursor: pointer;
+
+        &:hover {
+            background: $green;
+        }
+    }
+}
+
+@media screen and (max-width: 870px) {
+    
+    .main {
+     
+        // .main__input
+    
+        &__input {
+            grid-template-columns: repeat(2, 350px);
+        }
+    
+        // .main__item
+    
+        &__item {
+            width: 350px;
+        }  
+    } 
+}
+
+@media screen and (max-width: ($md2 + px)) {
+    
+    .main {
+        
+        // .main__form
+
+        &__form {
+            height: 525px;
+
+            // .main__form_title
+
+            &_title {
+                padding: 30px 0 20px;
+                font-size: 40px;
+            }
+        }
+   
+
+        // .main__input
+    
+        &__input {
+            padding-top: 15px;
+            display: block;
+        }
+    
+        // .main__item
+    
+        &__item {
+            width: 100%;
+
+            margin-bottom: 10px;
+        }
+    }
+}

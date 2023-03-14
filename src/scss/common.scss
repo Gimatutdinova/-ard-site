@@ -1,0 +1,91 @@
+  // Обнуление стилей
+@import "nullstyle";
+  // Обнуление стилей_____________________
+
+  // Подключение шрифтов
+@import "fonts";  
+  // Подключение шрифтов__________________
+
+  // Переменные
+$maxWidthConteiner: 1240;
+$md: $maxWidthConteiner + 30;
+$md1: 991;
+$md2: 780;
+$md3: 479;
+
+$green: #75FF72;
+$black: #0B0A0D;
+$white: #FFFFFF;
+
+  // Переменные___________________________
+
+  // Шаблоны
+%font_menu {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: $white;
+}
+
+%font_submenu {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: $white;
+}
+
+%font_text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+    
+  // Шаблоны______________________________
+
+  // Миксины
+  // Миксины______________________________
+
+
+
+body { 
+    background: $black;
+    color: $white;
+    font-family: MPLUS1p;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100%;
+}
+
+[class*="__conteiner"] {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+    max-width: $md + px;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 85px;
+    letter-spacing: -0.03em;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
