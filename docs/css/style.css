@@ -373,7 +373,6 @@ h3 {
 }
 
 .footer__icon {
-  fill: #FFFFFF;
   width: 27.9px;
   height: 27.9px;
   margin-right: 30px;
@@ -382,10 +381,6 @@ h3 {
 
 .footer__icon_youtube {
   margin-right: 0;
-}
-
-.footer__icon:hover {
-  fill: #75FF72 !important;
 }
 
 /* Slider */
@@ -525,13 +520,13 @@ h3 {
 .slick-prev {
   width: 100px;
   right: 51%;
-  background: url("../img/ArrowPrev.png") no-repeat;
+  background: url("../img/slider-1/ArrowPrev.png") no-repeat;
 }
 
 .slick-next {
   width: 101px;
   left: 51%;
-  background: url("../img/ArrowNext.png") no-repeat;
+  background: url("../img/slider-1/ArrowNext.png") no-repeat;
 }
 
 @media screen and (min-width: 780px) {

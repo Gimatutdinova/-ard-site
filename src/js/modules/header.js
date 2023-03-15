@@ -1,5 +1,6 @@
   
-  // Определение устройсва (pc/mob)
+// Определение устройсва (pc/mob)
+
 const isMobile = {
 	Android: function () {
 		return navigator.userAgent.match(/Android/i);
@@ -33,10 +34,10 @@ if (isMobile.any()) {
 	body.classList.add('_pc');
 }
 
-  //_______________________________________________
+//_________________________________________________
 
 
-  // Меню бургер
+// Меню бургер
 
 const btn = document.querySelector('.header__btn');
 const menu = document.querySelector('.header__menu');
@@ -54,5 +55,6 @@ function headerBtn() {
 		submenu.classList.toggle('_active');
 	})
 }
+headerBtn()
 
-  //_________________________________________________
+//_________________________________________________

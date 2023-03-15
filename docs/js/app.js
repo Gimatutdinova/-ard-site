@@ -1,5 +1,6 @@
 
 /* Проверка поддержка webp, добавление класса webp или no-webp для HTML */
+
 function isWebp() {
     // Проверка поддержки webp
     function testWebP(callback) {
@@ -16,8 +17,11 @@ function isWebp() {
     });
 }
 isWebp()
+
+//_________________________________________________
   
-  // Определение устройсва (pc/mob)
+// Определение устройсва (pc/mob)
+
 const isMobile = {
 	Android: function () {
 		return navigator.userAgent.match(/Android/i);
@@ -51,10 +55,10 @@ if (isMobile.any()) {
 	body.classList.add('_pc');
 }
 
-  //_______________________________________________
+//_________________________________________________
 
 
-  // Меню бургер
+// Меню бургер
 
 const btn = document.querySelector('.header__btn');
 const menu = document.querySelector('.header__menu');
@@ -72,8 +76,9 @@ function headerBtn() {
 		submenu.classList.toggle('_active');
 	})
 }
+headerBtn()
 
-  //_________________________________________________
+//_________________________________________________
 
 // Аккордеон
 
@@ -104,6 +109,8 @@ function clearActiveClasses() {
 }
 
 acc()
+
+//_________________________________________________
   
 // Маска для номера телефона
 
@@ -142,7 +149,7 @@ window.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-//_______________________________________________
+//_________________________________________________
 
 $(".slider").slick({
     adaptiveHeight: true,
